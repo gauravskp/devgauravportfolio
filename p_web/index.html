@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <header>
+            <a href="#" class="logo">logo</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+
+            </ul>
+    </header>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', this.pageYOffset > 0);
+        }
+        );
+    </script>
+    
+    <main>
+        <video autoplay muted loop>
+            <!-- Replace 'your-video-file.mp4' with the actual filename of your video -->
+            <source src="v2bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <section id="home">
+            <h2>Home Section</h2>
+            <p>Welcome to my portfolio!</p>
+
+            <div class="home1">
+                
+            </div>
+
+          </section>
+          
+          <section id="about">
+           
+            <h2>About Me Section</h2>
+            <div class="about-section">
+               
+                <div class="description">
+                  <h2>hi, I am Gaurav Prajapati..</h2>
+                  <p><ul class="about-me">
+                     <li>I am a dedicated and passionate freelancer specializing in web development and design.
+                        With a keen eye for detail and a commitment to delivering high-quality work, I bring a creative and innovative approach to every project.</li>
+                     <li> My goal is to help individuals and businesses establish a strong online presence through visually appealing and functional websites.</li>
+                     <li> My expertise includes HTML5, CSS3, JavaScript, ReactJS, NodeJS, Express, MongoDB, MySQL, Git, Bootstrap.</li>
+                     <li> My goal is to create websites that are visually appealing and user friendly.</li>
+                     <h2>So, Let's Get Started</h2>
+                     <li>Ready to take your online presence to the next level? I am here to turn your vision into reality.
+                         Contact me to discuss your project, and let's create a standout portfolio that sets you apart in your field.</li>
+                    </ul></p>
+                      
+
+                </div>
+              
+                <div class="image-container">
+                  <!-- Replace 'your-image.jpg' with the actual filename of your image -->
+                  <img src="u1.png" alt="Your Name">
+                </div>
+              </div>
+          </section>
+          
+          <section id="services">
+            <h2>Services Section</h2>
+            <p>Describe the services you offer.</p>
+          </section>
+          
+          <section id="skills">
+            <h2>Skills Section</h2>
+            <p>List your skills and expertise.</p>
+          </section>
+          
+          <section id="projects">
+            <h2>Projects Section</h2>
+            <p>Showcase your projects and work.</p>
+          </section>
+          
+          <section id="contacts">
+            <h2>Contact Section</h2>
+            <p>Provide contact information or a contact form.</p>
+          </section>
+          
+          
+          
+          <script>
+            // Smooth scrolling to anchor links
+            document.querySelectorAll('nav a').forEach(anchor => {
+              anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+          
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+                });
+              });
+            });
+          </script>
+          
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Portfolio. All rights reserved.</p>
+      </footer>
+</body>
+</html>
